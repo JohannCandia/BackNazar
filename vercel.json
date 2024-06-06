@@ -1,0 +1,18 @@
+{
+    "version" : 2,
+    "builds" : [
+        {
+            "src" : "./main.ts",
+            "args" : {
+                "BASE_IMAGE" : "node:12.18.3",
+                "PORT" : "3000"
+            }
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/.*",
+            "dest" : "/"
+        }
+    ]
+}
